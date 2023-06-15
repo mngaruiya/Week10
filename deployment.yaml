@@ -1,0 +1,21 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kuberneteswk10-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kuberneteswk10-deployment
+  template:
+    metadata:
+      labels:
+        app: kuberneteswk10-deployment
+    spec:
+      containers:
+        - image: mngaruiya/kubernetes:1.0.3
+          name: kuberneteswk10-deployment
+          ports:
+            - containerPort: 3000
+      
