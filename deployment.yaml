@@ -14,7 +14,7 @@ spec:
         app: kuberneteswk10-deployment
     spec:
       containers:
-        - image: mngaruiya/kubernetes:1.0.3
+        - image: mngaruiya/dockerwk10:1.0.0
           name: kuberneteswk10-deployment
           ports:
             - containerPort: 3000
